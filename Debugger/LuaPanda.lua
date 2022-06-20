@@ -1645,6 +1645,7 @@ function this.getStackTable( level )
                 ssindex = ssindex + 2;
             end
             ss.index = tostring(ssindex);
+            ss.name = tostring(ssindex - 2);
             table.insert(stackTab,ss);
             --把数据存入currentCallStack
             local callStackInfo = {};
